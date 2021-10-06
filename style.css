@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image:url("/assets/blur1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    margin-right: 150px;
+}
+
+.img1 {
+    padding: 50px 50px;
+}
+
+.img2 {
+    grid-area: img2;
+    margin-left: 50%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    "img2 wrapper__block"
+    "img2 wrapper__block";
+    color:white;
+}
+
+.wrapper__block {
+    grid-area: wrapper__block;
+    margin-left: 40%;
+    text-shadow: 0 0 3px black;
+}
+
+.text {
+    line-height: 5px;
+}
+
+.btn {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    padding: 12px 62px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 5px 6px;
+}
+
+.btn:active {
+    background: black;
+    color: white;
+}
+
+.span2 {
+    font-weight: bold;
+    font-size: 135%;
+}
+
+.mini {
+    text-align: right;
+    margin-right: 10%;
+}
+
+a {
+    font-size: 20px;
+    border-radius: 50%;
+    border: solid 1px white;
+    color: white;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    display: inline-block;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-areas: 
+        "img2"
+        "wrapper__block"
+    }
+
+    .img1 {
+        margin-bottom: 25px;
+    }
+
+    .img2 {
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
+    .title {
+        margin: 0%;
+        margin-bottom: 50px;
+    }
+
+    .wrapper__block {
+        text-align: center;
+        margin-right: auto;
+        margin-left: 0%;
+        margin-bottom: 100px;
+    }
+
+    .mini {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    a {
+        margin: 2px 2px;
+    }
+
+    .btn {
+        margin-top: 30px;
+    }
+}
