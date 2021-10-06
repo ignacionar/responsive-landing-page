@@ -89,12 +89,11 @@ a {
     display: inline-block;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .wrapper {
         display: grid;
         grid-template-areas: 
         "img2"
-        "wrapper__block"
         "wrapper__block"
     }
 
@@ -120,6 +119,10 @@ a {
         margin-right: auto;
         margin-left: 0%;
         margin-bottom: 100px;
+    }
+
+    .par {
+        font-size: 15px;
     }
 
     .mini {
