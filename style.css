@@ -95,6 +95,7 @@ a {
         grid-template-areas: 
         "img2"
         "wrapper__block"
+        "wrapper__block"
     }
 
     .img1 {
